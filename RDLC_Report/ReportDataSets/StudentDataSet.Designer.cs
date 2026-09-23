@@ -289,7 +289,7 @@ namespace RDLC_Report.ReportDataSets {
             
             private global::System.Data.DataColumn columnDepartment;
             
-            private global::System.Data.DataColumn columnRegidtrationNumber;
+            private global::System.Data.DataColumn columnRegistrationNumber;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -366,9 +366,9 @@ namespace RDLC_Report.ReportDataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn RegidtrationNumberColumn {
+            public global::System.Data.DataColumn RegistrationNumberColumn {
                 get {
-                    return this.columnRegidtrationNumber;
+                    return this.columnRegistrationNumber;
                 }
             }
             
@@ -409,7 +409,7 @@ namespace RDLC_Report.ReportDataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public StudentRow AddStudentRow(string StudentID, string Name, string Address, string Age, string Department, string RegidtrationNumber) {
+            public StudentRow AddStudentRow(string StudentID, string Name, string Address, string Age, string Department, string RegistrationNumber) {
                 StudentRow rowStudentRow = ((StudentRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         StudentID,
@@ -417,7 +417,7 @@ namespace RDLC_Report.ReportDataSets {
                         Address,
                         Age,
                         Department,
-                        RegidtrationNumber};
+                        RegistrationNumber};
                 rowStudentRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowStudentRow);
                 return rowStudentRow;
@@ -445,7 +445,7 @@ namespace RDLC_Report.ReportDataSets {
                 this.columnAddress = base.Columns["Address"];
                 this.columnAge = base.Columns["Age"];
                 this.columnDepartment = base.Columns["Department"];
-                this.columnRegidtrationNumber = base.Columns["RegidtrationNumber"];
+                this.columnRegistrationNumber = base.Columns["RegistrationNumber"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -461,8 +461,8 @@ namespace RDLC_Report.ReportDataSets {
                 base.Columns.Add(this.columnAge);
                 this.columnDepartment = new global::System.Data.DataColumn("Department", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDepartment);
-                this.columnRegidtrationNumber = new global::System.Data.DataColumn("RegidtrationNumber", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRegidtrationNumber);
+                this.columnRegistrationNumber = new global::System.Data.DataColumn("RegistrationNumber", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRegistrationNumber);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -685,17 +685,17 @@ namespace RDLC_Report.ReportDataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string RegidtrationNumber {
+            public string RegistrationNumber {
                 get {
                     try {
-                        return ((string)(this[this.tableStudent.RegidtrationNumberColumn]));
+                        return ((string)(this[this.tableStudent.RegistrationNumberColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'RegidtrationNumber\' in table \'Student\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'RegistrationNumber\' in table \'Student\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableStudent.RegidtrationNumberColumn] = value;
+                    this[this.tableStudent.RegistrationNumberColumn] = value;
                 }
             }
             
@@ -761,14 +761,14 @@ namespace RDLC_Report.ReportDataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsRegidtrationNumberNull() {
-                return this.IsNull(this.tableStudent.RegidtrationNumberColumn);
+            public bool IsRegistrationNumberNull() {
+                return this.IsNull(this.tableStudent.RegistrationNumberColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetRegidtrationNumberNull() {
-                this[this.tableStudent.RegidtrationNumberColumn] = global::System.Convert.DBNull;
+            public void SetRegistrationNumberNull() {
+                this[this.tableStudent.RegistrationNumberColumn] = global::System.Convert.DBNull;
             }
         }
         
